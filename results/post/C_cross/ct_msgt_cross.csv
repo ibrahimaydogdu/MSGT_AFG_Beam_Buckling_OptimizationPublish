@@ -1,0 +1,81 @@
+pair,BC,l_over_h0,quantity,value
+ALSIC,CF,0.1,"HV(MSGT-optimal, MSGT)",15.19145277247198
+ALSIC,CF,0.1,HV(CT-optimal designs evaluated with MSGT),15.115755579420592
+ALSIC,CF,0.1,"HV(CT-optimal, CT)",13.515467326817813
+ALSIC,CF,0.1,HV(MSGT-optimal designs evaluated with CT),13.550990610688531
+ALSIC,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q0.00 (mass-matched),nan
+ALSIC,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q0.25 (mass-matched),1.0012150097520098
+ALSIC,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q0.50 (mass-matched),0.9879640809337519
+ALSIC,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q0.75 (mass-matched),0.9990933225261177
+ALSIC,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q1.00 (mass-matched),nan
+ALSIC,CF,0.1,lam ratio CT-optimal/MSGT-optimal at knee (mass-matched),1.00155868070946
+ALSIC,CF,0.2,"HV(MSGT-optimal, MSGT)",19.915585654978713
+ALSIC,CF,0.2,HV(CT-optimal designs evaluated with MSGT),19.698507332811786
+ALSIC,CF,0.2,"HV(CT-optimal, CT)",13.456891673627485
+ALSIC,CF,0.2,HV(MSGT-optimal designs evaluated with CT),13.352747365983127
+ALSIC,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q0.00 (mass-matched),nan
+ALSIC,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q0.25 (mass-matched),0.9853170190442316
+ALSIC,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q0.50 (mass-matched),0.9857824993501018
+ALSIC,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q0.75 (mass-matched),1.0045553127462912
+ALSIC,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q1.00 (mass-matched),nan
+ALSIC,CF,0.2,lam ratio CT-optimal/MSGT-optimal at knee (mass-matched),0.987959922229134
+ALSIC,CP,0.1,"HV(MSGT-optimal, MSGT)",132.29444471552108
+ALSIC,CP,0.1,HV(CT-optimal designs evaluated with MSGT),129.8505384317324
+ALSIC,CP,0.1,"HV(CT-optimal, CT)",116.57206354081987
+ALSIC,CP,0.1,HV(MSGT-optimal designs evaluated with CT),118.72838273905897
+ALSIC,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q0.00 (mass-matched),nan
+ALSIC,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q0.25 (mass-matched),1.0038083052278168
+ALSIC,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q0.50 (mass-matched),0.9797632017218902
+ALSIC,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q0.75 (mass-matched),0.9928812838590872
+ALSIC,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q1.00 (mass-matched),nan
+ALSIC,CP,0.1,lam ratio CT-optimal/MSGT-optimal at knee (mass-matched),0.991585680105347
+ALSIC,CP,0.2,"HV(MSGT-optimal, MSGT)",162.1004060651138
+ALSIC,CP,0.2,HV(CT-optimal designs evaluated with MSGT),160.39059985103404
+ALSIC,CP,0.2,"HV(CT-optimal, CT)",109.9182160921106
+ALSIC,CP,0.2,HV(MSGT-optimal designs evaluated with CT),110.5368250602538
+ALSIC,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q0.00 (mass-matched),0.6783010425247016
+ALSIC,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q0.25 (mass-matched),0.9844963221210655
+ALSIC,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q0.50 (mass-matched),0.9862010970820577
+ALSIC,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q0.75 (mass-matched),0.9969635856783532
+ALSIC,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q1.00 (mass-matched),0.9875062754231636
+ALSIC,CP,0.2,lam ratio CT-optimal/MSGT-optimal at knee (mass-matched),0.9881107468609647
+SYN,CF,0.1,"HV(MSGT-optimal, MSGT)",29.58598854761758
+SYN,CF,0.1,HV(CT-optimal designs evaluated with MSGT),29.489670950375366
+SYN,CF,0.1,"HV(CT-optimal, CT)",26.94551788867523
+SYN,CF,0.1,HV(MSGT-optimal designs evaluated with CT),26.999707600214514
+SYN,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q0.00 (mass-matched),nan
+SYN,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q0.25 (mass-matched),1.0043312614162418
+SYN,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q0.50 (mass-matched),0.9897094881756778
+SYN,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q0.75 (mass-matched),1.0064726987823787
+SYN,CF,0.1,lam ratio CT-optimal/MSGT-optimal at q1.00 (mass-matched),nan
+SYN,CF,0.1,lam ratio CT-optimal/MSGT-optimal at knee (mass-matched),0.9821299882883288
+SYN,CF,0.2,"HV(MSGT-optimal, MSGT)",37.64387976458577
+SYN,CF,0.2,HV(CT-optimal designs evaluated with MSGT),37.03845628971116
+SYN,CF,0.2,"HV(CT-optimal, CT)",26.94551788867523
+SYN,CF,0.2,HV(MSGT-optimal designs evaluated with CT),27.05280427251211
+SYN,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q0.00 (mass-matched),nan
+SYN,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q0.25 (mass-matched),0.9731202956529059
+SYN,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q0.50 (mass-matched),0.9902074053640731
+SYN,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q0.75 (mass-matched),1.0040566534373483
+SYN,CF,0.2,lam ratio CT-optimal/MSGT-optimal at q1.00 (mass-matched),0.9639658850120373
+SYN,CF,0.2,lam ratio CT-optimal/MSGT-optimal at knee (mass-matched),0.9918731369591064
+SYN,CP,0.1,"HV(MSGT-optimal, MSGT)",229.15544451428497
+SYN,CP,0.1,HV(CT-optimal designs evaluated with MSGT),229.5069072489114
+SYN,CP,0.1,"HV(CT-optimal, CT)",209.86611342346072
+SYN,CP,0.1,HV(MSGT-optimal designs evaluated with CT),209.43022124602487
+SYN,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q0.00 (mass-matched),nan
+SYN,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q0.25 (mass-matched),0.9964214109321118
+SYN,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q0.50 (mass-matched),1.000512100237874
+SYN,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q0.75 (mass-matched),1.0060166833589073
+SYN,CP,0.1,lam ratio CT-optimal/MSGT-optimal at q1.00 (mass-matched),1.0108865857100795
+SYN,CP,0.1,lam ratio CT-optimal/MSGT-optimal at knee (mass-matched),0.9873663957729244
+SYN,CP,0.2,"HV(MSGT-optimal, MSGT)",289.3879836750299
+SYN,CP,0.2,HV(CT-optimal designs evaluated with MSGT),287.99215225291675
+SYN,CP,0.2,"HV(CT-optimal, CT)",209.86611342346072
+SYN,CP,0.2,HV(MSGT-optimal designs evaluated with CT),209.56743662533347
+SYN,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q0.00 (mass-matched),1.612028836595249
+SYN,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q0.25 (mass-matched),0.9670285520460682
+SYN,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q0.50 (mass-matched),0.9909580869134677
+SYN,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q0.75 (mass-matched),1.0012293542287896
+SYN,CP,0.2,lam ratio CT-optimal/MSGT-optimal at q1.00 (mass-matched),0.9701768115143673
+SYN,CP,0.2,lam ratio CT-optimal/MSGT-optimal at knee (mass-matched),0.9950213658924876
