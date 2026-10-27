@@ -9,7 +9,7 @@ from math import gamma, pi, sin
 
 from objectives import deb_better
 
-PENALTY_K = 1.0e2  # K in Eq. (81); user decision 2026-10-25 (text still shows 10^4; see FINAL_REVISION_NOTES.md)
+PENALTY_K = 1.0e2  # K in Eq. (81); aligned with manuscript Eq. (81) (K=10^2)
 ALPHA0 = 0.01      # Eq. (82)
 BETA = 1.5
 
