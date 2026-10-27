@@ -24,11 +24,9 @@ from objectives import DesignProblem  # noqa: E402
 
 RES = os.path.join(HERE, "results")
 POST = os.path.join(RES, "post")
-FIG = (os.path.normpath(os.path.join(HERE, "..", "04_Results", "figures"))
-       if os.path.exists(os.path.join(HERE, "..", "04_Results"))
-       else os.path.join(HERE, "figures"))
+FIG = os.path.normpath(os.path.join(HERE, "..", "04_Results", "figures"))
 ALGS = ("awsm", "nsga2", "moead")
-NAMES = {"awsm": "AWSM-ABC-Levy", "nsga2": "NSGA-II", "moead": "MOEA/D"}
+NAMES = {"awsm": "AWSM-ABC-Lévy", "nsga2": "NSGA-II", "moead": "MOEA/D"}
 COL = {"awsm": "#0072B2", "nsga2": "#D55E00", "moead": "#009E73"}
 MRK = {"awsm": "o", "nsga2": "s", "moead": "^"}
 MU_COL = {0.0: "#9ecae1", 0.1: "#4292c6", 0.2: "#08306b"}       # one hue, light -> dark with increasing l/h0
@@ -51,22 +49,9 @@ def sid(pair, bc, mu):
 
 def load_all():
     U = {}
-    union_cache = os.path.join(POST, "select", "union_main.npz")
-    if os.path.exists(union_cache):
-        import ast
-        z = np.load(union_cache)
-        scenarios = [k[:-5] for k in z.files if k.endswith("_rows")]
-        for s in scenarios:
-            meta_val = str(z[s + "_meta"])
-            try:
-                meta_dict = json.loads(meta_val)
-            except Exception:
-                meta_dict = ast.literal_eval(meta_val)
-            U[s] = {"meta": meta_dict, "rows": z[s + "_rows"], "base": "main"}
-    else:
-        for base in ("main",):
-            for s, d in PO.load_union(base).items():
-                U[s] = d
+    for base in ("main",):
+        for s, d in PO.load_union(base).items():
+            U[s] = d
     P = np.load(os.path.join(POST, "select", "Pstar.npz"))
     return U, P
 
@@ -260,19 +245,15 @@ def fig_front_ratio(U, P, out, mu=0.1):
             Ps = P[s]
             grid = np.exp(np.linspace(np.log(Ps[:, 0].min() * 1.0001), np.log(Ps[:, 0].max()), 120))
             envP = envelope(Ps[:, :2], grid)
-            rows_s = U[s]["rows"]
-            for ai, al in enumerate(ALGS):
-                al_rows = rows_s[rows_s[:, 20] == ai]
-                seeds = np.unique(al_rows[:, 21])
+            for al in ALGS:
                 rat = []
-                for seed in seeds:
-                    fr_seed = al_rows[al_rows[:, 21] == seed]
-                    if len(fr_seed) > 0:
-                        p_seed = PO.pareto_union(fr_seed[:, :2])
-                        rat.append(envelope(p_seed, grid) / envP)
-                if rat:
-                    rat = np.array(rat)
-                    ax.plot(grid / Ps[:, 0].max(), np.nanmedian(rat, axis=0), color=COL[al], lw=1.4, label=NAMES[al])
+                for f in sorted(glob.glob(os.path.join(RES, src[al], s, "*.npz"))):
+                    z = np.load(f, allow_pickle=False)
+                    if json.loads(str(z["meta"]))["alg"] != al or len(z["front"]) == 0:
+                        continue
+                    rat.append(envelope(z["front"][:, :2], grid) / envP)
+                rat = np.array(rat)
+                ax.plot(grid / Ps[:, 0].max(), np.nanmedian(rat, axis=0), color=COL[al], lw=1.4, label=NAMES[al])
             ax.set_xscale("log")
             ax.set_ylim(0, 1.05)
             ax.set_title(f"{plab}, {'clamped-free' if bc == 'CF' else 'clamped-pinned'}, $l/h_0$ = {mu}", fontsize=8)
@@ -325,7 +306,7 @@ def main():
     fig_size_effect(U, P, a.out)
     fig_front_ratio(U, P, a.out)
     fig_sweep(a.out)
-    print("figures saved successfully")
+    print("figures in", a.out)
 
 
 if __name__ == "__main__":
